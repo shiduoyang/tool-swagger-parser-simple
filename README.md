@@ -21,7 +21,7 @@ npm install swagger-parser-simple
 
 ### 1 normal parse
 ```
-swagger-parse-simple parse -y ./test/swagger.yaml  -t ./swagger.json
+swagger-parser-simple parse -y ./test/swagger.yaml  -t ./swagger.json
 ```
 result: 
 ```
@@ -31,11 +31,11 @@ result >> ./swagger.json done
 
 ### 2 help
 ```
-swagger-parse-simple parse --help
+swagger-parser-simple parse --help
 ```
 result:
 ```
-Usage: swagger-parse-simple parse [options]
+Usage: swagger-parser-simple parse [options]
 
 parse yaml to simple data and >> jsonfile
 
