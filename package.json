@@ -7,7 +7,7 @@
     "test": "mocha"
   },
   "bin": {
-    "swagger-parse-simple": "./bin/index.js"
+    "swagger-parser-simple": "./bin/index.js"
   },
   "repository": {
     "type": "git",
