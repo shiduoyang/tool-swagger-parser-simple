@@ -28,6 +28,70 @@ result:
 { yaml: './test/swagger.yaml', target: './swagger.json' }
 result >> ./swagger.json done
 ```
+swagger.json example
+```
+{
+    "version": "2.0",
+    "host": "petstore.swagger.io",
+    "basePath": "/v2",
+    "schemes": [
+        "https",
+        "http"
+    ],
+    "paths": [
+        {
+            "url": "/pet/findByStatus",
+            "method": "get",
+            "summary": "Finds Pets by status",
+            "description": "Multiple status values can be provided with comma separated strings",
+            "consumes": [],
+            "produces": [
+                "application/xml",
+                "application/json"
+            ],
+            "parameters": [
+                {
+                    "name": "status",
+                    "in": "query",
+                    "description": "Status values that need to be considered for filter",
+                    "required": true,
+                    "type": "array"
+                }
+            ],
+            "responses": {
+                "200": {
+                    "description": "successful operation",
+                    "data": [
+                        {
+                            "id": 1,
+                            "category": {
+                                "id": 1,
+                                "name": ""
+                            },
+                            "name": "",
+                            "photoUrls": [
+                                ""
+                            ],
+                            "tags": [
+                                {
+                                    "id": 1,
+                                    "name": ""
+                                }
+                            ],
+                            "status": "available"
+                        }
+                    ]
+                },
+                "400": {
+                    "description": "Invalid status value",
+                    "data": {}
+                }
+            }
+        }
+    ]
+}
+```
+
 
 ### 2 help
 ```
